@@ -155,6 +155,7 @@ footer {
 .projekt {
   background: #fff;
   color: #333;
+  position: relative;
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -165,7 +166,9 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-
+.projekt:hover::before {
+  opacity: 1;
+}
 
 /* MODAL */
 .modal {
@@ -287,4 +290,5 @@ body.modal-open {
   font-size: 12px;
   font-weight: 700;
   border-radius: 999px;
+  opacity: 0;
 }
