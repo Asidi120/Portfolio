@@ -14,7 +14,6 @@
         <li><a href="#o-mnie">O mnie</a></li>
         <li><a href="#projekty">Projekty</a></li>
         <li><a href="#umiejetnosci">Umiejętności</a></li>
-        <li><a href="#certyfikaty">Certyfikaty</a></li>
         <li><a href="#linki">Linki</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
@@ -23,109 +22,176 @@
 
   <section id="o-mnie">
     <h2>O mnie</h2>
-<p>Jestem studentką informatyki na Politechnice Śląskiej w Gliwicach, po drugim roku studiów. Specjalizuję się w programowaniu <strong>back-endowym</strong> i rozwijam się również w tworzeniu aplikacji webowych i mobilnych.</p>
-<p>Pracowałam z językami: <strong>Java</strong>, <strong>C#</strong>, <strong>C++</strong>, <strong>Python</strong>, <strong>Wolfram Language</strong>, <strong>Batch (Windows Script)</strong> oraz <strong>Bash (Linux Script)</strong>. Mam doświadczenie z frameworkiem <strong>WPF</strong> oraz bazami danych: <strong>MySQL</strong> i <strong>SQLite</strong>.</p>
-<p>Tworzę aplikacje webowe (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>) i mobilne (<strong>Android</strong>). Znam podstawy systemów <strong>Linux</strong> i <strong>Windows</strong>. W pracy korzystam z narzędzi takich jak <strong>Git</strong> i <strong>Docker</strong>.</p>
+<p>Jestem studentką informatyki na Politechnice Śląskiej w Gliwicach, na trzecim roku studiów. Specjalizuję się w programowaniu <strong>back-endowym</strong> i rozwijam się również w tworzeniu aplikacji webowych i mobilnych.</p>
+<p>Pracowałam z językami: <strong>C#</strong>, <strong>C++</strong>, <strong>Python</strong>,<strong> R</strong>,<strong> Java</strong>, <strong>Wolfram Language</strong>. Mam doświadczenie z frameworkiem <strong>WPF</strong> oraz bazami danych: <strong>MySQL</strong> i <strong>SQLite</strong>.</p>
+<p>Tworzę aplikacje webowe (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>) i mobilne (<strong>Android</strong>).</p>
 <p>Podczas realizacji projektów miałam okazję pracować zgodnie z wzorcami architektonicznymi takimi jak <strong>MVVM</strong> i <strong>MVP</strong>. Tworzyłam również aplikacje z wykorzystaniem biblioteki <strong>SFML</strong> (Simple and Fast Multimedia Library), co pozwoliło mi rozwinąć umiejętności w zakresie grafiki 2D i programowania obiektowego w C++.</p>
 <p>Jestem osobą ambitną, zorganizowaną i otwartą na nowe wyzwania. Brałam udział w projektach zespołowych, co rozwinęło moje umiejętności komunikacji i współpracy. Szukam okazji, by praktycznie wykorzystać zdobytą wiedzę i dalej rozwijać się technologicznie.</p>
   </section>
   <section id="projekty">
     <h2>Moje większe projekty</h2>
 
-    <div class="projekty-grid">
-      <!-- Projekt 1 -->
-      <div class="projekt">
-        <h3>Statki C++ (1. semestr studiów)</h3>
-        <p>Gra w statki napisana w języku C++, uruchamiana w konsoli. Gracz rywalizuje z komputerem.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/Asidi120/Statki_AM">Zobacz</a>
-            </div>
-      </div>
-        <!-- Projekt 2 -->
-        <div class="projekt">
-        <h3>Duck Jump Game (2. semestr studiów)</h3>
-        <p> Projekt zespołowy. Gra o skaczącej kaczuszce. Zrobiona przy użyciu języka C++ i SFML.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/Asidi120/Duck_Jump_Game_AM_JG_WS">Zobacz</a>
-            </div>
+<div class="projekty-grid">
+
+  <!-- TOP PROJEKTY -->
+    <div class="projekt" onclick="openModal('projekt_wykrywanie_i_rozpoznawanie_broni')">
+        <h3>Wykrywanie i rozpoznawanie broni</h3>
+        <p>Wykrywanie i rozpoznawanie broni z wykorzystaniem YOLOv8 oraz własnego algorytmu KNN i HOG w Pythonie.</p>
+        <div class="projekt-link">
+        <a href="https://github.com/Asidi120/Wykrywanie-i-analiza-broni/tree/main">Zobacz GitHub</a>
         </div>
-        <!-- Projekt 3 -->
-        <div class="projekt">
-        <h3>Formularz pracownicy (4. semestr studiów)</h3>
-        <p>Aplikacja formularz dla pracowdawcy. Można uzupełniać w nim pracowników wraz z ich danymi. Zrobiona z wykorzystaniem WPF.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/Asidi120/Pracownicy-AM">Zobacz</a>
-            </div>
-        </div>
-        <!-- Projekt 4 -->
-        <div class="projekt">
-        <h3>Pogodynka (4. semestr studiów)</h3>
-        <p>Aplikacja pokazująca pogode w odpowiednim miejscu. Zrobiona z wykorzystaniem WPF i API.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/Asidi120/Pogodynka_AM">Zobacz</a>
-            </div>
-        </div>
-        <!-- Projekt 5 -->
-        <div class="projekt">
-        <h3>Quiz (4. semestr studiów)</h3>
-        <p>Aplikacja do rozwiązywania i do robienia quizów. Zrobiona z wykorzystaniem WPF w modelu MVVM.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/Asidi120/Quiz_AM">Zobacz</a>
-            </div>
-        </div>
-        <!-- Projekt 6 -->
-        <div class="projekt">
-        <h3>MiniTC (4. semestr studiów)</h3>
-        <p>Aplikacja przypominająca Total Commander. Kopiuje pliki/foldery. Zrobiona z wykorzystaniem WPF w modelu MVP.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/Asidi120/MiniTC_AM">Zobacz</a>
-            </div>
-        </div>
-        <!-- Projekt 7 -->
-        <div class="projekt">
-        <h3>LitLib (4. semestr studiów)</h3>
-        <p>Projekt grupowy. Aplikacja do organizacji przeczytanych/szukania nowych książek. 
-            Osobne panele dla administracji i zwykłego użytkownika. Korzystano z MySQL. 
-            Zrobiona z wykorzystaniem WPF w modelu MVP.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/Asidi120/Projekt_koncowy_AM_WS_JG">Zobacz</a>
-            </div>
-        </div>
-        <!-- Projekt 8 -->
-        <div class="projekt">
-        <h3>Chiński nowy rok (4. semestr studiów)</h3>
-        <p>Projekt grupowy. Strona internetowa z wykorzystaniem HTML,CSS i JS. Dostotowana do audytu stron. Postawiona na Dockerze.</p>
-            <div class="projekt-link">
-                <a href="https://github.com/wera1000101/ZSI">Zobacz</a>
-            </div>
-        </div>
+  </div>
+  <div class="projekt" onclick="openModal('litlib')">
+    <h3>LitLib</h3>
+    <p>Projekt grupowy. Aplikacja do organizacji książek, role użytkowników, MySQL, WPF (MVP).</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Projekt_koncowy_AM_WS_JG">Zobacz GitHub</a>
     </div>
+  </div>
+  <div class="projekt" onclick="openModal('duckjump')">
+    <h3>Duck Jump Game</h3>
+    <p>Projekt zespołowy. Gra C++ z użyciem SFML.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Duck_Jump_Game_AM_JG_WS">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <!-- APLIKACJE -->
+  <div class="projekt" onclick="openModal('minitc')">
+    <h3>MiniTC</h3>
+    <p>Menadżer plików typu Total Commander. WPF, MVP.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/MiniTC_AM">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <div class="projekt" onclick="openModal('quiz')">
+    <h3>Quiz</h3>
+    <p>Aplikacja quizowa. WPF, MVVM.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Quiz_AM">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <div class="projekt" onclick="openModal('pogodynka')">
+    <h3>Pogodynka</h3>
+    <p>Aplikacja pogodowa z API. WPF.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Pogodynka_AM">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <div class="projekt" onclick="openModal('formularz')">
+    <h3>Formularz pracownicy</h3>
+    <p>Aplikacja formularzowa dla pracodawcy. WPF.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Pracownicy-AM">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <!-- GRY -->
+  <div class="projekt" onclick="openModal('statki')">
+    <h3>Statki C++</h3>
+    <p>Gra konsolowa w C++ – gracz kontra komputer.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Statki_AM">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <!-- DATA SCIENCE -->
+  <div class="projekt" onclick="openModal('rozpoznawanie_twarzy')">
+    <h3>Rozpoznawanie twarzy (KNN)</h3>
+    <p>Projekt z analizy danych i AI w Pythonie.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Projekt_Sztuczna_Inteligencja_AM_WS_JG">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <div class="projekt" onclick="openModal('analiza_danych_python')">
+    <h3>Analiza danych – Python</h3>
+    <p>Pandas, Matplotlib, Seaborn – 2 projekty.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/projekt-jupiter">Zobacz GitHub 1</a>
+    </div>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Projekt_analiza_danych_2">Zobacz GitHub 2</a>
+    </div>
+  </div>
+
+  <div class="projekt" onclick="openModal('analiza_z_wykorzystaniem_zaawansowanych_technik')">
+    <h3>Zaawansowane techniki analizy danych</h3>
+    <p>PCA, regresja, klasteryzacja, asocjacje.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Zaawansowane_techniki_eksploracji_danych/blob/main/Projekt_Algorytmy_Eksploracji_Danych.ipynb">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <div class="projekt" onclick="openModal('analiza_danych_r')">
+    <h3>Analiza danych – R</h3>
+    <p>ggplot2, dplyr.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/Asidi120/Analiza_danych_w_jezyku_R/blob/main/R_Projekt%20(1).ipynb">Zobacz GitHub</a>
+    </div>
+  </div>
+
+  <!-- WEB -->
+  <div class="projekt" onclick="openModal('chinskinowyrok')">
+    <h3>Chiński Nowy Rok</h3>
+    <p>Strona WWW: HTML, CSS, JS, Docker.</p>
+    <div class="projekt-link">
+      <a href="https://github.com/wera1000101/ZSI">Zobacz GitHub</a>
+    </div>
+  </div>
+
+</div>
   </section>
+
+
+<!-- JEDNO OKNO -->
+<div class="modal" id="modal" onclick="closeOnBackground(event)">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal()">×</button>
+    <h3 id="modal-title"></h3>
+    <p id="modal-text"></p>
+    <img id="modal-image1" class="modal-image" />
+    <img id="modal-image2" class="modal-image" />
+    <img id="modal-image3" class="modal-image" />
+    <img id="modal-image4" class="modal-image" />
+    <img id="modal-image5" class="modal-image" />
+    <img id="modal-image6" class="modal-image" />
+    <img id="modal-image7" class="modal-image" />
+    <h3 id="modal-title2"></h3>
+    <img id="modal-image8" class="modal-image" />
+    <img id="modal-image9" class="modal-image" />
+    <img id="modal-image10" class="modal-image" />
+    <img id="modal-image11" class="modal-image" />
+    <img id="modal-image12" class="modal-image" />
+    <img id="modal-image13" class="modal-image" />
+  </div>
+</div>
+
+
+
   <section id="umiejetnosci">
-    <h2>Umiejętności</h2>
+    <h2>Umiejętności oraz technologie, z którymi pracowałam:</h2>
     <ul>
       <li>Java</li>
       <li>C#</li>
       <li>C++</li>
-      <li>Python</li>
+      <li>Python (również w zakresie analizy danych)</li>
       <li>Wolfram Language</li>
-      <li>Batch (Windows Script)</li>
-      <li>Bash (Linux Script)</li>
       <li>WPF</li>
       <li>MySQL</li>
       <li>SQLite</li>
       <li>HTML, CSS, JavaScript</li>
       <li>Android Development</li>
+      <li>R (analiza danych)</li>
+      <li>Kotlin (podstawy)</li>
+      <li>MVVM i MVP (wzorce architektoniczne)</li>
+      <li>SFML (Simple and Fast Multimedia Library)</li>
       <li>Git</li>
       <li>Docker</li>
     </ul>
-  </section>
-  <section id="certyfikaty">
-    <h2>Certyfikaty</h2>
-    <ul>
-        <!--Do uzupelnienia-->
-    </ul>
-  </section>
   <section id="linki">
     <div class="social-links">
     <h2>Znajdziesz mnie również tutaj: <break></h2>
@@ -140,7 +206,6 @@
     <div class informacje>
         <p><strong>Imię i nazwisko:</strong> Agnieszka Mozol</p>
         <p><strong>Email:</strong> agamo2017@gmail.com</p>
-        <p><strong>Telefon:</strong> <!--Do uzupelnienia--></p>
     </div> 
 </section>
 <!-- Formularz -->

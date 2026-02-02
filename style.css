@@ -67,11 +67,11 @@ form button {
   border: none;
   cursor: pointer;
 }
-
 footer {
   text-align: center;
+  width: 100%;
   padding: 0px;
-  background: #222;
+  background: #333;
   color: white;
 }
 
@@ -109,4 +109,182 @@ footer {
 .social-links ul
 {
     margin-top: 20px;
+}
+
+
+.projekty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.projekt {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projekt:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.projekt:hover .projekt-hover {
+  opacity: 1;
+}
+
+/* Ukryj opis podczas hover */
+.projekt:hover .projekt-desc {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hint {
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+.projekty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.projekt {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projekt:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* animacja */
+.modal.show {
+  display: flex;
+}
+.modal-content {
+  background: #fff;
+  width: 800px;
+  max-height: 85vh;
+  padding: 25px;
+  border-radius: 12px;
+  overflow-y: auto;
+  animation: modalOpen 0.4s ease;
+  position: relative;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.close:hover {
+  color: #d86eae;
+}
+.modal-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: contain;
+  max-height: 400px;
+}
+.modal-image + .modal-image {
+  margin-top: 10px;
+}
+
+#modal-title,
+#modal-title2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;   /* przerwa pod tytułem */
+  color: #222;
+  position: relative;
+}
+
+/* dekoracyjna linia pod tytułem */
+#modal-title::after,
+#modal-title2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d86eae;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+#modal-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+#modal-text p {
+  margin-bottom: 15px;
+}
+.modal-image {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#modal-title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#modal-title2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Zapobiega przewijaniu strony, gdy modal jest otwarty */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* badge */
+.projekt::before {
+  content: "ZOBACZ GALERIĘ";
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background: #d86eae;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
 }
